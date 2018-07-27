@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09DF522DAA3FC6938E29D3EC /* Pods_PosAlermTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B78A8CCB1BB5110B4D8E6BA /* Pods_PosAlermTests.framework */; };
+		7F5C1C80210B024900BF5BC4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C1C7F210B024900BF5BC4 /* DateUtils.swift */; };
+		7F5C1C83210B0F7800BF5BC4 /* Alerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C1C82210B0F7800BF5BC4 /* Alerm.swift */; };
+		7F5C1C86210B138000BF5BC4 /* AlermRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C1C85210B138000BF5BC4 /* AlermRepository.swift */; };
+		7FB30778210998B90049DEC1 /* AlermCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB30777210998B90049DEC1 /* AlermCollectionViewCell.swift */; };
+		7FF60FA22100D19100CA2831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60FA12100D19100CA2831 /* AppDelegate.swift */; };
+		7FF60FA42100D19100CA2831 /* AlermListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60FA32100D19100CA2831 /* AlermListController.swift */; };
+		7FF60FA62100D19100CA2831 /* SetAlermController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60FA52100D19100CA2831 /* SetAlermController.swift */; };
+		7FF60FA92100D19100CA2831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF60FA72100D19100CA2831 /* Main.storyboard */; };
+		7FF60FAB2100D19100CA2831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF60FAA2100D19100CA2831 /* Assets.xcassets */; };
+		7FF60FAE2100D19100CA2831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF60FAC2100D19100CA2831 /* LaunchScreen.storyboard */; };
+		7FF60FB92100D19300CA2831 /* PosAlermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60FB82100D19300CA2831 /* PosAlermTests.swift */; };
+		7FF60FC42100D19300CA2831 /* PosAlermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60FC32100D19300CA2831 /* PosAlermUITests.swift */; };
+		8AA7D2841A6EB145644676A9 /* Pods_PosAlermUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0568B82F96C69A9550AB3F99 /* Pods_PosAlermUITests.framework */; };
+		FB9AC00B673D6E1ED8B0AA15 /* Pods_PosAlerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BA2E0E2064CFA63B6AAC56 /* Pods_PosAlerm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FF60FB52100D19300CA2831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FF60F962100D19100CA2831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF60F9D2100D19100CA2831;
+			remoteInfo = PosAlerm;
+		};
+		7FF60FC02100D19300CA2831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FF60F962100D19100CA2831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF60F9D2100D19100CA2831;
+			remoteInfo = PosAlerm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0568B82F96C69A9550AB3F99 /* Pods_PosAlermUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PosAlermUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4CE63CBB04FF2195CA7B0F /* Pods-PosAlermTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAlermTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PosAlermTests/Pods-PosAlermTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24397C7E014FCF004C90637D /* Pods-PosAlermTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAlermTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PosAlermTests/Pods-PosAlermTests.release.xcconfig"; sourceTree = "<group>"; };
+		57BA2E0E2064CFA63B6AAC56 /* Pods_PosAlerm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PosAlerm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6149029718E57824CB5F6D /* Pods-PosAlerm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAlerm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PosAlerm/Pods-PosAlerm.debug.xcconfig"; sourceTree = "<group>"; };
+		7784052AD99FAD1D14EBF6DC /* Pods-PosAlermUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAlermUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PosAlermUITests/Pods-PosAlermUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F5C1C7F210B024900BF5BC4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		7F5C1C82210B0F7800BF5BC4 /* Alerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerm.swift; sourceTree = "<group>"; };
+		7F5C1C85210B138000BF5BC4 /* AlermRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermRepository.swift; sourceTree = "<group>"; };
+		7FB30777210998B90049DEC1 /* AlermCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FF60F9E2100D19100CA2831 /* PosAlerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosAlerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF60FA12100D19100CA2831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FF60FA32100D19100CA2831 /* AlermListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermListController.swift; sourceTree = "<group>"; };
+		7FF60FA52100D19100CA2831 /* SetAlermController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlermController.swift; sourceTree = "<group>"; };
+		7FF60FA82100D19100CA2831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FF60FAA2100D19100CA2831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FF60FAD2100D19100CA2831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FF60FAF2100D19100CA2831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF60FB42100D19300CA2831 /* PosAlermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosAlermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF60FB82100D19300CA2831 /* PosAlermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosAlermTests.swift; sourceTree = "<group>"; };
+		7FF60FBA2100D19300CA2831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF60FBF2100D19300CA2831 /* PosAlermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosAlermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF60FC32100D19300CA2831 /* PosAlermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosAlermUITests.swift; sourceTree = "<group>"; };
+		7FF60FC52100D19300CA2831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B78A8CCB1BB5110B4D8E6BA /* Pods_PosAlermTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PosAlermTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0003CB5760DD9B157F1FFBA /* Pods-PosAlermUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAlermUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PosAlermUITests/Pods-PosAlermUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D245D4F9FB18FAA07C51D0BD /* Pods-PosAlerm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PosAlerm.release.xcconfig"; path = "Pods/Target Support Files/Pods-PosAlerm/Pods-PosAlerm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FF60F9B2100D19100CA2831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9AC00B673D6E1ED8B0AA15 /* Pods_PosAlerm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF60FB12100D19300CA2831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DF522DAA3FC6938E29D3EC /* Pods_PosAlermTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF60FBC2100D19300CA2831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA7D2841A6EB145644676A9 /* Pods_PosAlermUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F5C1C7E210B023100BF5BC4 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C1C7F210B024900BF5BC4 /* DateUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		7F5C1C81210B0F6100BF5BC4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C1C82210B0F7800BF5BC4 /* Alerm.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7F5C1C84210B136200BF5BC4 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C1C85210B138000BF5BC4 /* AlermRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		7F5C1C87210B1D0C00BF5BC4 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C1C89210B1D3400BF5BC4 /* components */,
+				7FF60FA32100D19100CA2831 /* AlermListController.swift */,
+				7FF60FA52100D19100CA2831 /* SetAlermController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		7F5C1C89210B1D3400BF5BC4 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				7FB30777210998B90049DEC1 /* AlermCollectionViewCell.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		7FF60F952100D19100CA2831 = {
+			isa = PBXGroup;
+			children = (
+				7FF60FA02100D19100CA2831 /* PosAlerm */,
+				7FF60FB72100D19300CA2831 /* PosAlermTests */,
+				7FF60FC22100D19300CA2831 /* PosAlermUITests */,
+				7FF60F9F2100D19100CA2831 /* Products */,
+				7FF60FD12100DA5400CA2831 /* Frameworks */,
+				A757FBDB8C2953D0C4967C7D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7FF60F9F2100D19100CA2831 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FF60F9E2100D19100CA2831 /* PosAlerm.app */,
+				7FF60FB42100D19300CA2831 /* PosAlermTests.xctest */,
+				7FF60FBF2100D19300CA2831 /* PosAlermUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FF60FA02100D19100CA2831 /* PosAlerm */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C1C87210B1D0C00BF5BC4 /* controllers */,
+				7F5C1C84210B136200BF5BC4 /* repositories */,
+				7F5C1C81210B0F6100BF5BC4 /* models */,
+				7F5C1C7E210B023100BF5BC4 /* utils */,
+				7FF60FA12100D19100CA2831 /* AppDelegate.swift */,
+				7FF60FA72100D19100CA2831 /* Main.storyboard */,
+				7FF60FAA2100D19100CA2831 /* Assets.xcassets */,
+				7FF60FAC2100D19100CA2831 /* LaunchScreen.storyboard */,
+				7FF60FAF2100D19100CA2831 /* Info.plist */,
+			);
+			path = PosAlerm;
+			sourceTree = "<group>";
+		};
+		7FF60FB72100D19300CA2831 /* PosAlermTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FF60FB82100D19300CA2831 /* PosAlermTests.swift */,
+				7FF60FBA2100D19300CA2831 /* Info.plist */,
+			);
+			path = PosAlermTests;
+			sourceTree = "<group>";
+		};
+		7FF60FC22100D19300CA2831 /* PosAlermUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FF60FC32100D19300CA2831 /* PosAlermUITests.swift */,
+				7FF60FC52100D19300CA2831 /* Info.plist */,
+			);
+			path = PosAlermUITests;
+			sourceTree = "<group>";
+		};
+		7FF60FD12100DA5400CA2831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57BA2E0E2064CFA63B6AAC56 /* Pods_PosAlerm.framework */,
+				9B78A8CCB1BB5110B4D8E6BA /* Pods_PosAlermTests.framework */,
+				0568B82F96C69A9550AB3F99 /* Pods_PosAlermUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A757FBDB8C2953D0C4967C7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E6149029718E57824CB5F6D /* Pods-PosAlerm.debug.xcconfig */,
+				D245D4F9FB18FAA07C51D0BD /* Pods-PosAlerm.release.xcconfig */,
+				0D4CE63CBB04FF2195CA7B0F /* Pods-PosAlermTests.debug.xcconfig */,
+				24397C7E014FCF004C90637D /* Pods-PosAlermTests.release.xcconfig */,
+				D0003CB5760DD9B157F1FFBA /* Pods-PosAlermUITests.debug.xcconfig */,
+				7784052AD99FAD1D14EBF6DC /* Pods-PosAlermUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FF60F9D2100D19100CA2831 /* PosAlerm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF60FC82100D19300CA2831 /* Build configuration list for PBXNativeTarget "PosAlerm" */;
+			buildPhases = (
+				472191A3C6001401C1329655 /* [CP] Check Pods Manifest.lock */,
+				7FF60F9A2100D19100CA2831 /* Sources */,
+				7FF60F9B2100D19100CA2831 /* Frameworks */,
+				7FF60F9C2100D19100CA2831 /* Resources */,
+				F1F93EAE8ABF62C097438C7D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PosAlerm;
+			productName = PosAlerm;
+			productReference = 7FF60F9E2100D19100CA2831 /* PosAlerm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FF60FB32100D19300CA2831 /* PosAlermTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF60FCB2100D19300CA2831 /* Build configuration list for PBXNativeTarget "PosAlermTests" */;
+			buildPhases = (
+				4089C66198DD61EB7F4A6B1F /* [CP] Check Pods Manifest.lock */,
+				7FF60FB02100D19300CA2831 /* Sources */,
+				7FF60FB12100D19300CA2831 /* Frameworks */,
+				7FF60FB22100D19300CA2831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF60FB62100D19300CA2831 /* PBXTargetDependency */,
+			);
+			name = PosAlermTests;
+			productName = PosAlermTests;
+			productReference = 7FF60FB42100D19300CA2831 /* PosAlermTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FF60FBE2100D19300CA2831 /* PosAlermUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF60FCE2100D19300CA2831 /* Build configuration list for PBXNativeTarget "PosAlermUITests" */;
+			buildPhases = (
+				9A39CA281E071511634709B8 /* [CP] Check Pods Manifest.lock */,
+				7FF60FBB2100D19300CA2831 /* Sources */,
+				7FF60FBC2100D19300CA2831 /* Frameworks */,
+				7FF60FBD2100D19300CA2831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF60FC12100D19300CA2831 /* PBXTargetDependency */,
+			);
+			name = PosAlermUITests;
+			productName = PosAlermUITests;
+			productReference = 7FF60FBF2100D19300CA2831 /* PosAlermUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FF60F962100D19100CA2831 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "竹尾広章";
+				TargetAttributes = {
+					7FF60F9D2100D19100CA2831 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					7FF60FB32100D19300CA2831 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7FF60F9D2100D19100CA2831;
+					};
+					7FF60FBE2100D19300CA2831 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7FF60F9D2100D19100CA2831;
+					};
+				};
+			};
+			buildConfigurationList = 7FF60F992100D19100CA2831 /* Build configuration list for PBXProject "PosAlerm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FF60F952100D19100CA2831;
+			productRefGroup = 7FF60F9F2100D19100CA2831 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FF60F9D2100D19100CA2831 /* PosAlerm */,
+				7FF60FB32100D19300CA2831 /* PosAlermTests */,
+				7FF60FBE2100D19300CA2831 /* PosAlermUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FF60F9C2100D19100CA2831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF60FAE2100D19100CA2831 /* LaunchScreen.storyboard in Resources */,
+				7FF60FAB2100D19100CA2831 /* Assets.xcassets in Resources */,
+				7FF60FA92100D19100CA2831 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF60FB22100D19300CA2831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF60FBD2100D19300CA2831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4089C66198DD61EB7F4A6B1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PosAlermTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		472191A3C6001401C1329655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PosAlerm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A39CA281E071511634709B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PosAlermUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F93EAE8ABF62C097438C7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PosAlerm/Pods-PosAlerm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PosAlerm/Pods-PosAlerm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FF60F9A2100D19100CA2831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB30778210998B90049DEC1 /* AlermCollectionViewCell.swift in Sources */,
+				7F5C1C83210B0F7800BF5BC4 /* Alerm.swift in Sources */,
+				7FF60FA62100D19100CA2831 /* SetAlermController.swift in Sources */,
+				7F5C1C80210B024900BF5BC4 /* DateUtils.swift in Sources */,
+				7F5C1C86210B138000BF5BC4 /* AlermRepository.swift in Sources */,
+				7FF60FA22100D19100CA2831 /* AppDelegate.swift in Sources */,
+				7FF60FA42100D19100CA2831 /* AlermListController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF60FB02100D19300CA2831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF60FB92100D19300CA2831 /* PosAlermTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF60FBB2100D19300CA2831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF60FC42100D19300CA2831 /* PosAlermUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FF60FB62100D19300CA2831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF60F9D2100D19100CA2831 /* PosAlerm */;
+			targetProxy = 7FF60FB52100D19300CA2831 /* PBXContainerItemProxy */;
+		};
+		7FF60FC12100D19300CA2831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF60F9D2100D19100CA2831 /* PosAlerm */;
+			targetProxy = 7FF60FC02100D19300CA2831 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FF60FA72100D19100CA2831 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FF60FA82100D19100CA2831 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FF60FAC2100D19100CA2831 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FF60FAD2100D19100CA2831 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FF60FC62100D19300CA2831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FF60FC72100D19300CA2831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FF60FC92100D19300CA2831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6149029718E57824CB5F6D /* Pods-PosAlerm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49K3JJFDY6;
+				INFOPLIST_FILE = PosAlerm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hiroaki.takeo.PosAlerm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FF60FCA2100D19300CA2831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D245D4F9FB18FAA07C51D0BD /* Pods-PosAlerm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49K3JJFDY6;
+				INFOPLIST_FILE = PosAlerm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hiroaki.takeo.PosAlerm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FF60FCC2100D19300CA2831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4CE63CBB04FF2195CA7B0F /* Pods-PosAlermTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PosAlermTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hiroaki.takeo.PosAlermTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PosAlerm.app/PosAlerm";
+			};
+			name = Debug;
+		};
+		7FF60FCD2100D19300CA2831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24397C7E014FCF004C90637D /* Pods-PosAlermTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PosAlermTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hiroaki.takeo.PosAlermTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PosAlerm.app/PosAlerm";
+			};
+			name = Release;
+		};
+		7FF60FCF2100D19300CA2831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0003CB5760DD9B157F1FFBA /* Pods-PosAlermUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PosAlermUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hiroaki.takeo.PosAlermUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PosAlerm;
+			};
+			name = Debug;
+		};
+		7FF60FD02100D19300CA2831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7784052AD99FAD1D14EBF6DC /* Pods-PosAlermUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PosAlermUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hiroaki.takeo.PosAlermUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PosAlerm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FF60F992100D19100CA2831 /* Build configuration list for PBXProject "PosAlerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF60FC62100D19300CA2831 /* Debug */,
+				7FF60FC72100D19300CA2831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF60FC82100D19300CA2831 /* Build configuration list for PBXNativeTarget "PosAlerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF60FC92100D19300CA2831 /* Debug */,
+				7FF60FCA2100D19300CA2831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF60FCB2100D19300CA2831 /* Build configuration list for PBXNativeTarget "PosAlermTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF60FCC2100D19300CA2831 /* Debug */,
+				7FF60FCD2100D19300CA2831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF60FCE2100D19300CA2831 /* Build configuration list for PBXNativeTarget "PosAlermUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF60FCF2100D19300CA2831 /* Debug */,
+				7FF60FD02100D19300CA2831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FF60F962100D19100CA2831 /* Project object */;
+}
